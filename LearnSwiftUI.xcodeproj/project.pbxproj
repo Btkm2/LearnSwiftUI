@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0C61D8FA29FA5D1C00F2A56F /* TestContainer.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 0C61D8F829FA5D1C00F2A56F /* TestContainer.xcdatamodeld */; };
+		0C7A422329F80EB300A17145 /* ChartView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C7A422229F80EB300A17145 /* ChartView.swift */; };
 		0CED64592930B471006475F4 /* LearnSwiftUIApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED64582930B471006475F4 /* LearnSwiftUIApp.swift */; };
 		0CED645B2930B471006475F4 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED645A2930B471006475F4 /* ContentView.swift */; };
 		0CED645D2930B473006475F4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CED645C2930B473006475F4 /* Assets.xcassets */; };
 		0CED64602930B473006475F4 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0CED645F2930B473006475F4 /* Preview Assets.xcassets */; };
+		0CED64672930B4D9006475F4 /* ParentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED64662930B4D9006475F4 /* ParentView.swift */; };
+		0CED646A2930BC00006475F4 /* FlightsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED64692930BC00006475F4 /* FlightsModel.swift */; };
+		0CED646D2930C4BF006475F4 /* FlightsVeiwModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0CED646C2930C4BF006475F4 /* FlightsVeiwModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0C61D8F929FA5D1C00F2A56F /* TestContainer.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = TestContainer.xcdatamodel; sourceTree = "<group>"; };
+		0C7A422229F80EB300A17145 /* ChartView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChartView.swift; sourceTree = "<group>"; };
 		0CED64552930B471006475F4 /* LearnSwiftUI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LearnSwiftUI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0CED64582930B471006475F4 /* LearnSwiftUIApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LearnSwiftUIApp.swift; sourceTree = "<group>"; };
 		0CED645A2930B471006475F4 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		0CED645C2930B473006475F4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0CED645F2930B473006475F4 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		0CED64662930B4D9006475F4 /* ParentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ParentView.swift; sourceTree = "<group>"; };
+		0CED64692930BC00006475F4 /* FlightsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsModel.swift; sourceTree = "<group>"; };
+		0CED646C2930C4BF006475F4 /* FlightsVeiwModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightsVeiwModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,22 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0C61D8F729FA5CDE00F2A56F /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				0C61D8F829FA5D1C00F2A56F /* TestContainer.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		0C7A422129F80E8100A17145 /* SwiftUI Charts */ = {
+			isa = PBXGroup;
+			children = (
+				0C7A422229F80EB300A17145 /* ChartView.swift */,
+			);
+			path = "SwiftUI Charts";
+			sourceTree = "<group>";
+		};
 		0CED644C2930B471006475F4 = {
 			isa = PBXGroup;
 			children = (
@@ -51,10 +77,15 @@
 		0CED64572930B471006475F4 /* LearnSwiftUI */ = {
 			isa = PBXGroup;
 			children = (
+				0C61D8F729FA5CDE00F2A56F /* CoreData */,
+				0C7A422129F80E8100A17145 /* SwiftUI Charts */,
+				0CED646B2930C4A5006475F4 /* ViewModel */,
+				0CED64682930BBE6006475F4 /* Model */,
 				0CED64582930B471006475F4 /* LearnSwiftUIApp.swift */,
 				0CED645A2930B471006475F4 /* ContentView.swift */,
 				0CED645C2930B473006475F4 /* Assets.xcassets */,
 				0CED645E2930B473006475F4 /* Preview Content */,
+				0CED64662930B4D9006475F4 /* ParentView.swift */,
 			);
 			path = LearnSwiftUI;
 			sourceTree = "<group>";
@@ -65,6 +96,22 @@
 				0CED645F2930B473006475F4 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		0CED64682930BBE6006475F4 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0CED64692930BC00006475F4 /* FlightsModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0CED646B2930C4A5006475F4 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				0CED646C2930C4BF006475F4 /* FlightsVeiwModel.swift */,
+			);
+			path = ViewModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -137,8 +184,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0CED646D2930C4BF006475F4 /* FlightsVeiwModel.swift in Sources */,
 				0CED645B2930B471006475F4 /* ContentView.swift in Sources */,
+				0CED64672930B4D9006475F4 /* ParentView.swift in Sources */,
 				0CED64592930B471006475F4 /* LearnSwiftUIApp.swift in Sources */,
+				0CED646A2930BC00006475F4 /* FlightsModel.swift in Sources */,
+				0C7A422329F80EB300A17145 /* ChartView.swift in Sources */,
+				0C61D8FA29FA5D1C00F2A56F /* TestContainer.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -339,6 +391,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		0C61D8F829FA5D1C00F2A56F /* TestContainer.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				0C61D8F929FA5D1C00F2A56F /* TestContainer.xcdatamodel */,
+			);
+			currentVersion = 0C61D8F929FA5D1C00F2A56F /* TestContainer.xcdatamodel */;
+			path = TestContainer.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = 0CED644D2930B471006475F4 /* Project object */;
 }

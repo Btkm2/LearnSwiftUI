@@ -9,9 +9,10 @@ import SwiftUI
 
 @main
 struct LearnSwiftUIApp: App {
+    @StateObject private var flights = FlightsViewModel()
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ParentView().environmentObject(flights)
         }
     }
 }
